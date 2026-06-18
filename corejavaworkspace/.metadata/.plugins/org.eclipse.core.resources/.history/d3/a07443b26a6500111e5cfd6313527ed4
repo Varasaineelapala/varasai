@@ -1,0 +1,40 @@
+package com.javaintroduction;
+
+public class Employee2 {
+	int empId;
+	String name;
+	String dept;
+	int salary;
+	Employee2(int empId,String name,String dept,int salary){
+		this.empId=empId;
+		this.name=name;
+		this.dept=dept;
+		this.salary=salary;
+		/*System.out.println("Employee Id: "+empId);
+		System.out.println("Employee Name: "+ name);
+		System.out.println("Salary: "+salary);
+		System.out.println("Department: "+dept);*/
+		};
+	   
+}
+
+	public static void main(String[] args) {
+		 void display() {
+		System.out.println("Employee Id: "+empId);
+		System.out.println("Employee Name: "+ name);
+		System.out.println("Salary: "+salary);
+		System.out.println("Department: "+dept);
+		
+		
+		Employee2 emp1=new Employee2(101,"sai","engineering",25000);
+		emp1.display();
+		Employee2 emp2=new Employee2(102,"vvv","Hr",50000);
+		emp2.display();
+		Employee2 emp3=new Employee2(103,"aaa","engineering",30000);
+		emp3.display();
+		Employee2 emp4=new Employee2(104,"rrr","engineering",29000);
+		emp4.display();
+		
+	}
+
+}

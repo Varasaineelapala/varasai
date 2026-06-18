@@ -1,0 +1,24 @@
+package com.javaintroduction;
+
+public class Employee2 {
+	int empId;
+	String name;
+	String dept;
+	int salary;
+	Employee2(int empId,String name,String dept,int salary){
+		this.empId=empId;
+		this.name=name;
+		this.dept=dept;
+		this.salary=salary;
+		System.out.println("Employee Id: "+empId);
+		System.out.println("Employee Name: "+ name);
+		System.out.println("Salary: "+salary);
+		System.out.println("Department: "+dept);
+		};
+	//void display() {}
+
+	public static void main(String[] args) {
+
+	}
+
+}

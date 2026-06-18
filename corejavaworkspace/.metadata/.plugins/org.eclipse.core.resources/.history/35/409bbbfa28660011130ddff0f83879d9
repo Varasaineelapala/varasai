@@ -1,0 +1,19 @@
+
+package com.javaintroduction;
+
+public class ObjecCounter {
+	static int counter=0;
+	{
+		ObjecCounter.counter++ ;
+	}
+	public static void main(String[] args) {
+	  ObjecCounter obj1=new ObjecCounter();
+	  ObjecCounter obj2=new ObjecCounter();
+	  ObjecCounter obj3=new ObjecCounter();
+	  ObjecCounter obj4=new ObjecCounter();
+	  ObjecCounter obj5=new ObjecCounter();
+	  System.out.println("Number of Objects Created:" +counter);
+
+	}
+
+}

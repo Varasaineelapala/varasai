@@ -1,0 +1,39 @@
+package com.javaintroduction;
+import java.util.Scanner;
+public class Student {
+int rollNumber;
+String name;
+static int studentCounter=0;
+Student(int rollNumber,String name){
+	this.rollNumber=rollNumber;
+	this.name=name;
+	studentCounter++;
+}
+void display(){
+	System.out.println("============================");
+	System.out.println("Roll Number :"+rollNumber);
+	System.out.println("Name :"+name);
+}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Student[] stud=new Student[3];
+		for(int i=0;i<=2;i++){
+			System.out.println("Enter the details of student "+(i+1));
+			System.out.print("Roll Number :");
+			int rn=sc.nextInt();
+			sc.nextLine();
+			System.out.print("Name :");
+			String name=sc.nextLine();
+			stud[i]=new Student(rn,name);
+			
+		}
+		sc.close();
+		for(Student st :stud) {
+			st.display();
+		}
+		System.out.println("Number of students registered :"+Student.studentCounter);
+		}
+
+	}
+
+

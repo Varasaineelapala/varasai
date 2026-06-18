@@ -1,0 +1,13 @@
+package com.javaintroduction;
+
+public class Test {
+	{
+		x=x+1;
+	}
+	static int x=1;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

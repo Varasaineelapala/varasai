@@ -1,0 +1,22 @@
+package com.javaintroduction;
+
+public class Employee {
+	int employeeId;
+	String employeeName;
+	int salary;
+	String department;
+	public static void main(String[] args) {
+		
+		Employee emp1=new Employee();
+		emp1.employeeId=001;
+		emp1.employeeName="Sai";
+		emp1.salary=30000;
+		emp1.department="Engineering";
+		System.out.println("Employee Id: "+emp1.employeeId);
+		System.out.println("Employee Name: "+ emp1.employeeName);
+		System.out.println("Salary: "+emp1.salary);
+		System.out.println("Department: "+emp1.department);
+		
+	}
+
+}

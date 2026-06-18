@@ -1,0 +1,52 @@
+package com.javaintroduction;
+
+import java.util.Scanner;
+
+public class Book {
+	int bookId;
+	String bookName;
+	String author;
+	double price;
+
+	Book(int bookId, String bookName, String author, double price) {
+		this.bookId = bookId;
+		this.bookName = bookName;
+		this.author = author;
+		this.price = price;
+	}
+
+	void display() {
+		if (price <= 500) {
+			System.out.println("=========================");
+			System.out.println("Book Id :" + bookId);
+			System.out.println("Book Name :" + bookName);
+			System.out.println("Author :" + author);
+			System.out.println("Price :" + price);
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Book[] book = new Book[3];
+		for (int i = 0; i <= 2; i++) {
+			System.out.println("Enter the details of Book " + (i + 1));
+			System.out.print("Enter the Book ID :");
+			int id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Enter Book Name :");
+			String name = sc.nextLine();
+			System.out.print("Author Name :");
+			String author = sc.nextLine();
+			System.out.print("Enter Price :");
+			double pri = sc.nextDouble();
+			sc.nextLine();
+			book[i] = new Book(id, name, author, pri);
+
+		}
+		sc.close();
+		for (Book bk : book) {
+			bk.display();
+		}
+	}
+
+}

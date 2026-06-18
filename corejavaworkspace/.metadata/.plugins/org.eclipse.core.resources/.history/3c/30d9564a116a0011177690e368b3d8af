@@ -1,0 +1,18 @@
+package com.javaintroduction;
+
+public class AGC {
+@Override
+	protected void finalize() throws Throwable {
+		System.out.println("finalize called");
+	}
+	public static void main(String[] args) {
+		AGC g1 = new AGC();
+		AGC g2 = new AGC();
+		AGC g3 = new AGC();
+		System.gc();
+		g1=null;
+		g2=g3;
+	}
+	
+
+}
