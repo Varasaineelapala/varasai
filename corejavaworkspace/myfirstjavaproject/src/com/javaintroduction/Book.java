@@ -35,7 +35,7 @@ public class Book {
 	}
 
 	void display() {
-		if (price >= 500) {
+		 {
 			System.out.println("=========================");
 			System.out.println("Book Id :" + bookId);
 			System.out.println("Book Name :" + bookName);
@@ -64,6 +64,8 @@ public class Book {
 		}
 		sc.close();
 		for (Book bk : book) {
+			if (bk.price >= 500)
+				
 			bk.display();
 		}
 	}
