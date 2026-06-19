@@ -1,7 +1,7 @@
 package com.javaintroduction;
 
 class AGC1 {
-	AGC2 a2=new AGC2();
+	AGC2 a2;
 
 	@Override
 	protected void finalize() throws Throwable {
@@ -10,7 +10,7 @@ class AGC1 {
 }
 
 class AGC2 {
-	AGC1 a1=new AGC1();
+	AGC1 a1;
 
 	@Override
 	protected void finalize() throws Throwable {
@@ -40,12 +40,12 @@ public class AGC {
 		System.out.println(g1);
 		System.out.println(g2);
 		System.out.println(g3);
-//		AGC1 obj1 = new AGC1();
-//		AGC2 obj2 = new AGC2();
-//		obj1.a2 = obj2;
-//		obj2.a1 = obj1;
-//		obj1 = null;
-//		obj2 = null;
+		AGC1 obj1 = new AGC1();
+		AGC2 obj2 = new AGC2();
+		obj1.a2 = obj2;
+		obj2.a1 = obj1;
+		obj1 = null;
+		obj2 = null;
 
 		System.gc();
 		System.out.println("GC called");
